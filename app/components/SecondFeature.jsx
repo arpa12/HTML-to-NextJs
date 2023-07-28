@@ -13,7 +13,7 @@ const SecondFeature = () => {
     <div className="container-fluid bg-light overflow-hidden my-5 px-lg-0">
       <div className="container feature px-lg-0">
         <div className="row g-0 mx-lg-0">
-          <div className="col-lg-6 feature-text py-5 wow fadeIn px-3" >
+          <div className="col-lg-6 feature-text py-5 wow fadeIn px-5" >
             <div className="p-lg-5 ps-lg-0">
               <div className="section-title text-start">
                 <h1 className="display-5 mb-4 fw-bold">Why Choose Us</h1>
