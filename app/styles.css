@@ -1,6 +1,5 @@
 /********** Template CSS **********/
 
-
 :root {
   --primary: #AB7442;
   --light: #F5F5F5;
@@ -26,10 +25,6 @@
   bottom: 45px;
   z-index: 99;
 }
-
-
-
-
 
 /*** Button ***/
 .btn {
@@ -92,13 +87,13 @@
 }
 
 @media (max-width: 991.98px) {
-  .navbar-light .navbar-nav .nav-link  {
-      margin-right: 0;
-      padding: 10px 0;
+  .navbar-light .navbar-nav .nav-link {
+    margin-right: 0;
+    padding: 10px 0;
   }
 
   .navbar-light .navbar-nav {
-      border-top: 1px solid #EEEEEE;
+    border-top: 1px solid #EEEEEE;
   }
 }
 
@@ -114,48 +109,46 @@
 
 @media (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {
-      display: block;
-      border: none;
-      margin-top: 0;
-      top: 150%;
-      opacity: 0;
-      visibility: hidden;
-      transition: .5s;
+    display: block;
+    border: none;
+    margin-top: 0;
+    top: 150%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
   }
 
   .navbar .nav-item:hover .dropdown-menu {
-      top: 100%;
-      visibility: visible;
-      transition: .5s;
-      opacity: 1;
+    top: 100%;
+    visibility: visible;
+    transition: .5s;
+    opacity: 1;
   }
 }
-
 
 /*** Header ***/
 @media (max-width: 768px) {
   .header-carousel .owl-carousel-item {
-      position: relative;
-      min-height: 500px;
+    position: relative;
+    min-height: 500px;
   }
-  
-  .header-carousel .owl-carousel-item img {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
 
+  .header-carousel .owl-carousel-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .header-carousel .owl-carousel-item h5,
   .header-carousel .owl-carousel-item p {
-      font-size: 14px !important;
-      font-weight: 400 !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
   }
 
   .header-carousel .owl-carousel-item h1 {
-      font-size: 30px;
-      font-weight: 600;
+    font-size: 30px;
+    font-weight: 600;
   }
 }
 
@@ -229,46 +222,40 @@
 }
 
 #carouselExample .img-one {
-  background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url("../public/assets/carousel-1.jpg") center  no-repeat;
+  background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url("../public/assets/carousel-1.jpg") center no-repeat;
   background-size: cover;
-
 }
-#carouselExample  .img-two {
+
+#carouselExample .img-two {
   background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url("../public/assets/carousel-2.jpg") center no-repeat;
   background-size: cover;
 }
-#carouselExample  .img-three {
+
+#carouselExample .img-three {
   background: linear-gradient(rgba(53, 53, 53, .7), rgba(53, 53, 53, .7)), url("../public/assets/carousel-3.jpg") center no-repeat;
   background-size: cover;
 }
-#carouselExample .img-one .image-one{
-  height: 700px;
-  width: 1300px;
-}
-#carouselExample .img-two .image-two{
-  height: 700px;
-  width: 1300px;
-}
-#carouselExample .img-three .image-three{
-  height:700px;
+
+#carouselExample .images {
+  height: 600px;
   width: 1300px;
 }
 
-#carouselExample .container-text{
-  margin-top: 300px;
-}
-#carouselExample .container-text{
-  margin-top: 300px;
-}
-#carouselExample  .container-text{
+#carouselExample .container-text {
   margin-top: 300px;
 }
 
+#carouselExample .container-text {
+  margin-top: 300px;
+}
+
+#carouselExample .container-text {
+  margin-top: 300px;
+}
 
 .breadcrumb-item + .breadcrumb-item::before {
   color: var(--light);
 }
-
 
 /*** Section Title ***/
 .section-title h1 {
@@ -303,30 +290,40 @@
   display: none;
 }
 
-
 /*** About ***/
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .container.about {
-      max-width: 100% !important;
+    max-width: 100% !important;
   }
 
-  .about-text  {
-      padding-right: calc(((100% - 960px) / 2) + .75rem);
+  .about-text {
+    padding-right: calc(((100% - 540px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .about-text {
+    padding-right: calc(((100% - 720px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .about-text {
+    padding-right: calc(((100% - 960px) / 2) + .75rem);
   }
 }
 
 @media (min-width: 1200px) {
-  .about-text  {
-      padding-right: calc(((100% - 1140px) / 2) + .75rem);
+  .about-text {
+    padding-right: calc(((100% - 1140px) / 2) + .75rem);
   }
 }
 
 @media (min-width: 1400px) {
-  .about-text  {
-      padding-right: calc(((100% - 1320px) / 2) + .75rem);
+  .about-text {
+    padding-right: calc(((100% - 1320px) / 2) + .75rem);
   }
 }
-
 
 /*** Service ***/
 .service-item img {
@@ -337,30 +334,40 @@
   transform: scale(1.1);
 }
 
-
 /*** Feature ***/
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .container.feature {
-      max-width: 100% !important;
+    max-width: 100% !important;
   }
 
-  .feature-text  {
-      padding-left: calc(((100% - 960px) / 2) + .75rem);
+  .feature-text {
+    padding-left: calc(((100% - 540px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .feature-text {
+    padding-left: calc(((100% - 720px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .feature-text {
+    padding-left: calc(((100% - 960px) / 2) + .75rem);
   }
 }
 
 @media (min-width: 1200px) {
-  .feature-text  {
-      padding-left: calc(((100% - 1140px) / 2) + .75rem);
+  .feature-text {
+    padding-left: calc(((100% - 1140px) / 2) + .75rem);
   }
 }
 
 @media (min-width: 1400px) {
-  .feature-text  {
-      padding-left: calc(((100% - 1320px) / 2) + .75rem);
+  .feature-text {
+    padding-left: calc(((100% - 1320px) / 2) + .75rem);
   }
 }
-
 
 /*** Project Portfolio ***/
 #portfolio-flters li {
@@ -374,8 +381,8 @@
 
 #portfolio-flters li:hover,
 #portfolio-flters li.active {
-  color: var(--primary);
-  border-color: var(--primary);
+  color: #A52A2A;
+  border-color: #A52A2A;
 }
 
 .portfolio-item img {
@@ -413,30 +420,40 @@
   opacity: 1;
 }
 
-
 /*** Quote ***/
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .container.quote {
-      max-width: 100% !important;
+    max-width: 100% !important;
   }
 
-  .quote-text  {
-      padding-right: calc(((100% - 960px) / 2) + .75rem);
+  .quote-text {
+    padding-right: calc(((100% - 540px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .quote-text {
+    padding-right: calc(((100% - 720px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .quote-text {
+    padding-right: calc(((100% - 960px) / 2) + .75rem);
   }
 }
 
 @media (min-width: 1200px) {
-  .quote-text  {
-      padding-right: calc(((100% - 1140px) / 2) + .75rem);
+  .quote-text {
+    padding-right: calc(((100% - 1140px) / 2) + .75rem);
   }
 }
 
 @media (min-width: 1400px) {
-  .quote-text  {
-      padding-right: calc(((100% - 1320px) / 2) + .75rem);
+  .quote-text {
+    padding-right: calc(((100% - 1320px) / 2) + .75rem);
   }
 }
-
 
 /*** Team ***/
 .team-item img {
@@ -473,10 +490,7 @@
   left: 0;
 }
 
-
 /*** Testimonial ***/
-
-
 .container {
   margin-top: 15%;
 }
@@ -489,7 +503,6 @@
   border: none;
   background-color: inherit;
   margin-bottom: 20px;
-  
 }
 
 .card .box {
@@ -504,7 +517,6 @@
   transition: 0.5s;
   backface-visibility: hidden;
   border: 2px solid #A52A2A;
-  
 }
 
 .card .box.front {
@@ -574,30 +586,40 @@
   }
 }
 
-
 /*** Contact ***/
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .container.contact {
-      max-width: 100% !important;
+    max-width: 100% !important;
   }
 
-  .contact-text  {
-      padding-left: calc(((100% - 960px) / 2) + .75rem);
+  .contact-text {
+    padding-left: calc(((100% - 540px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-text {
+    padding-left: calc(((100% - 720px) / 2) + .75rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-text {
+    padding-left: calc(((100% - 960px) / 2) + .75rem);
   }
 }
 
 @media (min-width: 1200px) {
-  .contact-text  {
-      padding-left: calc(((100% - 1140px) / 2) + .75rem);
+  .contact-text {
+    padding-left: calc(((100% - 1140px) / 2) + .75rem);
   }
 }
 
 @media (min-width: 1400px) {
-  .contact-text  {
-      padding-left: calc(((100% - 1320px) / 2) + .75rem);
+  .contact-text {
+    padding-left: calc(((100% - 1320px) / 2) + .75rem);
   }
 }
-
 
 /*** Footer ***/
 .footer {
@@ -639,7 +661,6 @@
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   margin-right: 10px;
-  
 }
 
 .footer .btn.btn-link:hover {
@@ -659,5 +680,5 @@
 }
 
 .footer .copyright a:hover {
-  color: var(--primary);
+  color: #A52A2A;
 }

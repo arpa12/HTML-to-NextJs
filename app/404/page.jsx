@@ -1,9 +1,7 @@
 import React from "react";
-import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons"
+import { errorData } from "../data";
 
-library.add(faExclamationTriangle);
 
 const Page = () => {
   const containerStyle = {
@@ -25,13 +23,17 @@ const Page = () => {
       <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div className="container text-center">
           <div className="row justify-content-center">
-            <div className="col-lg-6">
-             <FontAwesomeIcon icon={faExclamationTriangle} style={{ color: "#A52A2A", width:"100px",height:"100px" }} />
-              <h1 className="display-1 fw-bold">404</h1>
-              <h1 className="mb-4 fw-bold">Page Not Found</h1>
-              <p className="mb-4">We are sorry, the page you have looked for does not exist in our website! Maybe go to our home page or try to use a search?</p>
-              <a className="btn py-3 px-5" href="/" style={{ backgroundColor: "#A52A2A", color: "#FFFFFF" }}>Go Back To Home</a>
-            </div>
+            {errorData && errorData.map((item)=>(
+              <div className="col-lg-6" key={item.id}>
+              <FontAwesomeIcon icon={item.icon} style={{ color: "#A52A2A", width:"100px",height:"100px" }} />
+               <h1 className="display-1 fw-bold">{item.title}</h1>
+               <h1 className="mb-4 fw-bold">{item.subtitle}</h1>
+               <p className="mb-4">{item.description}</p>
+               {item.actionLink && item.actionLink.map((item)=>(
+                <a className="btn py-3 px-5" href="/" style={{ backgroundColor: "#A52A2A", color: "#FFFFFF" }} key={item.id}>{item.button}</a>
+               ))}
+             </div>
+            ))}
           </div>
         </div>
       </div>
