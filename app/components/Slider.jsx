@@ -25,7 +25,7 @@ const Slider = () => {
                     <a
                       key={action.id}
                       href={action.link}
-                      className={`btn py-md-3 px-md-5 me-3 slideInLeft ${item.className}-button`}
+                      className={`btn py-md-3 px-md-5 me-3 slideInLeft  btn-${action.id===2?'success':'danger'}`}
                       style={{
                         backgroundColor: action.id === 2 ? "#FFFFFF" : "#A52A2A",
                         color: action.id === 2 ? "#A52A2A" : "#FFFFFF",
